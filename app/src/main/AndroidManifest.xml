@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="media.willis.com.gamma_tuning" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".GammaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gamma_standard"
+            android:label="@string/title_activity_gamma_standard" >
+        </activity>
+        <activity
+            android:name=".gamma_s_shape"
+            android:label="@string/title_activity_gamma_s_shape" >
+        </activity>
+        <activity
+            android:name=".gamma_x_table"
+            android:label="@string/title_activity_gamma_x_table" >
+        </activity>
+    </application>
+
+</manifest>

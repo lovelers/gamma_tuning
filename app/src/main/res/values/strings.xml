@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gamma_Tuning</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_gamma_standard">gamma_standard</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_gamma_s_shape">gamma_s_shape</string>
+    <string name="title_activity_gamma_x_table">gamma_x_table</string>
+</resources>
