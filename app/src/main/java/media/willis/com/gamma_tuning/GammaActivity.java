@@ -46,8 +46,10 @@ public class GammaActivity extends Activity {
                     gammaIntent = new Intent(GammaActivity.this, gamma_standard.class);
                     break;
                 case gamma_type.GAMMA_S_SHAPE:
+                    gammaIntent = new Intent(GammaActivity.this, gamma_s_shape.class);
                     break;
-                case gamma_type.GAMMA_COMPOSE:
+                case gamma_type.GAMMA_COMBINATION:
+                    gammaIntent = new Intent(GammaActivity.this, gamma_combination.class);
                     break;
                 default:
                     break;

@@ -9,4 +9,5 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_gamma_s_shape">gamma_s_shape</string>
     <string name="title_activity_gamma_x_table">gamma_x_table</string>
+    <string name="title_activity_gamma_combination">gamma_combination</string>
 </resources>

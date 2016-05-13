@@ -33,8 +33,10 @@ public class gamma_x_table extends Activity {
                 (EditText)findViewById(R.id.x_table_text29),(EditText)findViewById(R.id.x_table_text30),(EditText)findViewById(R.id.x_table_text31),(EditText)findViewById(R.id.x_table_text32),
         };
         for (int i = 0; i < Gamma.GAMMA_X_TABLE_COUNT; ++i) {
-            if (mXTable[i] != null)
+            if (mXTable[i] != null) {
                 mXTable[i].setText("" + Integer.toString(xTable[i]));
+                mXTable[i].setSelectAllOnFocus(true);
+            }
         }
         mGammaXTableView = (gamma_x_table_view) findViewById(R.id.gamma_x_table_view);
         mGammaXTableView.setXTable(xTable);

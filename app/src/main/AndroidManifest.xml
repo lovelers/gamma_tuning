@@ -29,6 +29,10 @@
             android:name=".gamma_x_table"
             android:label="@string/title_activity_gamma_x_table" >
         </activity>
+        <activity
+            android:name=".gamma_combination"
+            android:label="@string/title_activity_gamma_combination" >
+        </activity>
     </application>
 
 </manifest>

@@ -18,11 +18,19 @@ public class Gamma {
             2816,3072,  3072+256,  3584, 4096,  4608,  5120,  5120+512,
             6144, 6144+512, 7168, 8192, 10240, 12288, 14336, 16384
     };
+    /*
     private float[] gamma_s_shape_table_default = {
             0.1f, 0.52f, 0.55f, 0.58f, 0.61f, 0.64f, 0.67f, 0.7f,
             0.73f, 0.76f, 0.79f, 0.85f, 0.91f, 0.96f, 1.01f, 1.015f,
             1.022f, 1.038f, 1.055f, 1.065f, 1.078f, 1.09f, 1.10f, 1.105f,
             1.10f, 1.087f, 1.075f, 1.06f, 1.045f, 1.030f, 1.015f, 1.f,
+    };
+    */
+    private float[]  gamma_s_shape_table_default = {
+            0.1f, 0.1f, 0.15f, 0.2f, 0.25f, 0.3f, 0.35f, 0.4f,
+            0.45f, 0.5f, 0.55f, 0.7f, 0.85f, 0.95f, 1.015f, 1.04f,
+            1.06f, 1.07f, 1.08f, 1.085f, 1.09f, 1.09f, 1.09f, 1.09f,
+            1.09f, 1.085f, 1.078f, 1.065f, 1.04f, 1.025f, 1.01f, 1.f,
     };
     public static Gamma getInstance() {
         return ourInstance;
@@ -144,6 +152,7 @@ public class Gamma {
     float[] getSGamma() {
         return gammaMap.gamma_s_shape_table;
     }
+
     class gamma_map {
         public float normalGamma;
         public int normalBaseOffset;
@@ -176,7 +185,7 @@ public class Gamma {
         data.add(gamma_type.GAMMA_INDOOR_S);
         data.add(gamma_type.GAMMA_OUTDOOR_S);
         data.add(gamma_type.GAMMA_S_SHAPE_S);
-        data.add(gamma_type.GAMMA_COMPOSE_S);
+        data.add(gamma_type.GAMMA_COMBINATION_S);
         return data;
     }
 
@@ -193,8 +202,8 @@ public class Gamma {
                 return gamma_type.GAMMA_OUTDOOR_S;
             case gamma_type.GAMMA_S_SHAPE:
                 return gamma_type.GAMMA_S_SHAPE_S;
-            case gamma_type.GAMMA_COMPOSE:
-                return gamma_type.GAMMA_COMPOSE_S;
+            case gamma_type.GAMMA_COMBINATION:
+                return gamma_type.GAMMA_COMBINATION_S;
             default:
                 return null;
         }
